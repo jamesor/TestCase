@@ -45,7 +45,7 @@ extern const char * CompressCodeData(const char * strToCompress);
         NSLog(@"Returned Value = %s", compressed);
         
         NSString *casted = [NSString stringWithCString:compressed encoding:NSASCIIStringEncoding];
-        NSLog(@"Casted Value = %@", casted);
+        NSLog(@"Casted Value = %@\n\n", casted);
         
     }
 }
