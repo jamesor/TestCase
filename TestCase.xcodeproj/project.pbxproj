@@ -83,9 +83,9 @@
 				2BB766331588CDC60079AE7F /* AppDelegate.m */,
 				2BB766351588CDC60079AE7F /* ViewController.h */,
 				2BB766361588CDC60079AE7F /* ViewController.m */,
+				2BB766401588CF170079AE7F /* SampleWrapper.cpp */,
 				2BB766381588CDC60079AE7F /* ViewController.xib */,
 				2BB7662A1588CDC50079AE7F /* Supporting Files */,
-				2BB766401588CF170079AE7F /* SampleWrapper.cpp */,
 			);
 			path = TestCase;
 			sourceTree = "<group>";

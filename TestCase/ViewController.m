@@ -5,7 +5,7 @@
 
 #import "ViewController.h"
 
-extern const char * CompressCodeData(const char * strToCompress);
+extern char * CompressCodeData(const char * strToCompress);
 
 @interface ViewController ()
 
@@ -41,12 +41,13 @@ extern const char * CompressCodeData(const char * strToCompress);
         const char *testData = [[NSString stringWithFormat:@"%d", (int)(arc4random() % 100000000)] UTF8String];
         NSLog(@"Test Data = %s", testData);
         
-        const char *compressed = CompressCodeData(testData);
+        char *compressed = CompressCodeData(testData);
         NSLog(@"Returned Value = %s", compressed);
         
         NSString *casted = [NSString stringWithCString:compressed encoding:NSASCIIStringEncoding];
         NSLog(@"Casted Value = %@\n\n", casted);
         
+        free(compressed);
     }
 }
 

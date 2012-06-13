@@ -17,7 +17,7 @@ extern "C"
      * This function simply wraps a library function so that 
      * it can be used in objective-c.
      */
-    const char * CompressCodeData(const char * strToCompress) 
+    char * CompressCodeData(const char * strToCompress) 
     {
         const string s(strToCompress);
         
@@ -25,7 +25,7 @@ extern "C"
         // to simplify this test case.
         
         //const char *result = SomeStaticLibraryFunction(s);
-        const char *result = s.c_str();
+        char *result = strdup(s.c_str());
         
         NSLog(CFSTR("In Compress %s"), result);
         return result;
