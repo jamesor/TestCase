@@ -15,6 +15,7 @@
 		2BB766341588CDC60079AE7F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BB766331588CDC60079AE7F /* AppDelegate.m */; };
 		2BB766371588CDC60079AE7F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BB766361588CDC60079AE7F /* ViewController.m */; };
 		2BB7663A1588CDC60079AE7F /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2BB766381588CDC60079AE7F /* ViewController.xib */; };
+		2BB766411588CF170079AE7F /* SampleWrapper.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2BB766401588CF170079AE7F /* SampleWrapper.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,15 +23,16 @@
 		2BB766231588CDC50079AE7F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		2BB766251588CDC50079AE7F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		2BB766271588CDC50079AE7F /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		2BB7662B1588CDC50079AE7F /* TestCase-Info.plist */ = {isa = PBXFileReference; path = "TestCase-Info.plist"; sourceTree = "<group>"; };
+		2BB7662B1588CDC50079AE7F /* TestCase-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TestCase-Info.plist"; sourceTree = "<group>"; };
 		2BB7662D1588CDC50079AE7F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		2BB7662F1588CDC50079AE7F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		2BB766311588CDC50079AE7F /* TestCase-Prefix.pch */ = {isa = PBXFileReference; path = "TestCase-Prefix.pch"; sourceTree = "<group>"; };
-		2BB766321588CDC50079AE7F /* AppDelegate.h */ = {isa = PBXFileReference; path = AppDelegate.h; sourceTree = "<group>"; };
+		2BB766311588CDC50079AE7F /* TestCase-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TestCase-Prefix.pch"; sourceTree = "<group>"; };
+		2BB766321588CDC50079AE7F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		2BB766331588CDC60079AE7F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		2BB766351588CDC60079AE7F /* ViewController.h */ = {isa = PBXFileReference; path = ViewController.h; sourceTree = "<group>"; };
+		2BB766351588CDC60079AE7F /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		2BB766361588CDC60079AE7F /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		2BB766391588CDC60079AE7F /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController.xib; sourceTree = "<group>"; };
+		2BB766401588CF170079AE7F /* SampleWrapper.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SampleWrapper.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +85,7 @@
 				2BB766361588CDC60079AE7F /* ViewController.m */,
 				2BB766381588CDC60079AE7F /* ViewController.xib */,
 				2BB7662A1588CDC50079AE7F /* Supporting Files */,
+				2BB766401588CF170079AE7F /* SampleWrapper.cpp */,
 			);
 			path = TestCase;
 			sourceTree = "<group>";
@@ -163,6 +166,7 @@
 				2BB766301588CDC50079AE7F /* main.m in Sources */,
 				2BB766341588CDC60079AE7F /* AppDelegate.m in Sources */,
 				2BB766371588CDC60079AE7F /* ViewController.m in Sources */,
+				2BB766411588CF170079AE7F /* SampleWrapper.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

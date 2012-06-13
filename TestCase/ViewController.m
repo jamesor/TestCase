@@ -2,11 +2,10 @@
 //  ViewController.m
 //  TestCase
 //
-//  Created by James O'Reilly on 6/13/12.
-//  Copyright (c) 2012 __MyCompanyName__. All rights reserved.
-//
 
 #import "ViewController.h"
+
+extern const char * CompressCodeData(const char * strToCompress);
 
 @interface ViewController ()
 
@@ -29,6 +28,26 @@
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
 {
     return (interfaceOrientation != UIInterfaceOrientationPortraitUpsideDown);
+}
+
+- (IBAction)testNow:(id)sender {
+    [self performSelectorInBackground:@selector(analyze) withObject:nil];
+}
+
+- (void)analyze
+{
+    @synchronized(self) {
+        
+        const char *testData = [[NSString stringWithFormat:@"%d", (int)(arc4random() % 100000000)] UTF8String];
+        NSLog(@"Test Data = %s", testData);
+        
+        const char *compressed = CompressCodeData(testData);
+        NSLog(@"Returned Value = %s", compressed);
+        
+        NSString *casted = [NSString stringWithCString:compressed encoding:NSASCIIStringEncoding];
+        NSLog(@"Casted Value = %@", casted);
+        
+    }
 }
 
 @end
